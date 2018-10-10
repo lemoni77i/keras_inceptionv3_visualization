@@ -54,7 +54,9 @@ def render_vis(model, objective_f, file_name, filter_idx,
 					vis = t_image.eval()
 					loss_p = loss_
 					plt.title("Filter {}, {:.5f}".format(filter_idx, loss_))
-					plt.imsave(file_name, np.hstack(vis))
+					plt.imshow(np.hstack(vis))
+					plt.savefig(file_name)
+					plt.close()
 		except KeyboardInterrupt:
 			vis = t_image.eval()
 			show(np.hstack(vis))
