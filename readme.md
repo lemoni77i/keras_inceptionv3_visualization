@@ -20,10 +20,19 @@ example
 $python visualize.py
 -modelzoo_file="keras_inception_v3_frozen.pb.modelzoo"
 -conv_layer_idx=6
--num_of_filters=3
+-filter_idx=15
+-num_of_filters=1
 -input_image_path="image/welshcorgi.jpg"
 ```
 
+Output
+------
+feature_visualization 결과 (conv2d_6 15th filter)
+![Alt text](Conv6_15.jpg, "conv2d_6 15th filter")
+
+
+saliency_visualization 결과 (conv2d_6 15th filter saliency)
+![Alt text](Conv6_15_saliency.jpg, "conv2d_6 15th saliency")
 
 option 별 설명
 --------------
