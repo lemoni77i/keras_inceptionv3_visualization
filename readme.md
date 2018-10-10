@@ -27,12 +27,12 @@ $python visualize.py
 
 Output
 ------
-feature_visualization 결과 (conv2d_6 15th filter)
-![Alt text](Conv6_15.jpg, "conv2d_6 15th filter")
+feature_visualization 결과 (conv2d_6 15th filter) <br/>
+![conv2d_6 15th filter](Conv6_15.png)  <br/>
 
 
-saliency_visualization 결과 (conv2d_6 15th filter saliency)
-![Alt text](Conv6_15_saliency.jpg, "conv2d_6 15th saliency")
+saliency_visualization 결과 (conv2d_6 15th filter saliency)  <br/>
+![conv2d_6 15th filter saliency](Conv6_15_saliency.png)  <br/>
 
 option 별 설명
 --------------
