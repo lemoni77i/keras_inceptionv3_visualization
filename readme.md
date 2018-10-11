@@ -37,8 +37,8 @@ saliency_visualization 결과 (conv2d_6 15th filter saliency)  <br/>
 option 별 설명
 --------------
 -modelzoo_file:
-freeze_graph.py의 output_graph로 나온 결과물
-(lucid colab 참고)
+freeze_graph.py의 output_graph로 나온 .modelzoo 파일
+([lucid model import](https://colab.research.google.com/drive/1PPzeZi5sBN2YRlBmKsdvZPbfYtZI-pHl) 참고)
 
 -conv_layer_idx:
 Keras InceptionV3 모델에서 시각화 하고 싶은 conv2d layer 번호 (1~94)
