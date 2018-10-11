@@ -1,8 +1,8 @@
 Keras InceptionV3 모델 시각화
 ===========================
-- feature visualization => lucid<br/>
-- saliency => kears-vis<br/>
-사용
+Visualize filters and saliencies of convolutional layer in Keras InceptionV3 model. <br/>
+Using lucid, visualize an image that activates target filter. (feature visualization) <br />
+Using Keras-vis, visualize an image which shows where that filter looks in input image (saliency). <br /> 
 
 Dependencies
 ------------
@@ -27,27 +27,27 @@ $python visualize.py
 
 Output
 ------
-feature_visualization 결과 (conv2d_6 15th filter) <br/>
+feature_visualization output (conv2d_6 15th filter) <br/>
 ![conv2d_6 15th filter](Conv6_15.png)  <br/>
 
 
-saliency_visualization 결과 (conv2d_6 15th filter saliency)  <br/>
+saliency_visualization output (conv2d_6 15th filter saliency)  <br/>
 ![conv2d_6 15th filter saliency](Conv6_15_saliency.png)  <br/>
 
 option 별 설명
 --------------
 -modelzoo_file:
-freeze_graph.py의 output_graph로 나온 .modelzoo 파일
-([lucid model import](https://colab.research.google.com/drive/1PPzeZi5sBN2YRlBmKsdvZPbfYtZI-pHl) 참고)
+A .modelzoo file which is outcome of freeze_graph.py
+([lucid model import](https://colab.research.google.com/drive/1PPzeZi5sBN2YRlBmKsdvZPbfYtZI-pHl)
 
 -conv_layer_idx:
-Keras InceptionV3 모델에서 시각화 하고 싶은 conv2d layer 번호 (1~94)
+Index of convolutional layer in Keras Inceptionv3 which you want to visualize. Range 1~94
 
 -filter_idx:
-시각화 하고 싶은 filter 번호 (optional)
+Index of filter in the convolutional layer which you want to visualize. (Optional)
 
 -num_of_filters:
-filter_idx가 주어질 경우 1, filter_idx를 특정하지 않을 경우 한 layer에서 시각화하고 싶은 filter 갯수
+The number of filters you want to visualize at the layer. The 'num_of_fileters' of filters that most activates the layer will visualized. If you want to visualize specific filter, then this should be 1. 
 
 -input_image_path:
-saliency를 시각화 하고 싶은 이미지
+A Path of image you want to visualize the saliency.
